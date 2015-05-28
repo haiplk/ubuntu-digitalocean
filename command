@@ -1,65 +1,20 @@
-    1  ls
-    2  cd /home/
-    3  ls
-    4  clear
-    5  cd ..
+    
     6  apt-get update
     7  apt-get upgrade
-    8  apt-get install nginx
-    9  sudo update-rc.d nginx defaults
-   10  ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
-   11  128.199.91.120
-   12  sudo apt-get install mysql-server
-   13  sudo mysql_install_db
-   14  sudo mysql_secure_installation
-   15  sudo apt-get install php5-fpm php5-mysql
-   16  sudo nano /etc/php5/fpm/php.ini
-   17  sudo service php5-fpm restart
-   18  sudo nano /etc/nginx/sites-available/default
-   19  sudo service nginx restart
-   20  sudo nano /usr/share/nginx/html/info.php
-   21  wget http://repo.ajenti.org/debian/key -O- | apt-key add -
+    1  wget http://repo.ajenti.org/debian/key -O- | apt-key add -
    22  echo "deb http://repo.ajenti.org/ng/debian main main ubuntu" >> /etc/apt/sources.list
    23  apt-get update && apt-get install ajenti -y
    24  service ajenti restart
    25  nano /etc/sysconfig/iptables
    26  sudo netstat -ntlp | grep LISTEN
-   27  listen 80
-   28  nano /etc/ajenti/config.json 
-   29  netstat -anltp | grep "8000"
-   30  sudo iptables -L
-   31  clear
-   32  sudo iptables -L
-   33  sudo iptables -S
-   34  sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
-   35  sudo iptables -L
    36  sudo iptables -A INPUT -p tcp --dport 8000 -j ACCEPT
    37  sudo iptables -I INPUT 1 -i lo -j ACCEPT
-   38  sudo iptables -S
-   39  sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
-   40  sudo iptables -S
-   41  apt-get install ajenti-v ajenti-v-nginx ajenti-v-mysql ajenti-v-php-fpm
+     apt-get install ajenti-v ajenti-v-nginx ajenti-v-mysql ajenti-v-php-fpm
    42  service ajenti restart
    43  apt-get instal ajenti-v-ftp-pureftpd
    44  apt-get install ajenti-v ajenti-v-ftp-pureftpd
    45  service ajenti restart
-   46  ls
-   47  cd /svr
-   48  cd /home
-   49  ls
-   50  cd /srv
-   51  ls
-   52  cd www/
-   53  ls
-   54  cd emovl/
-   55  ls
-   56  nano index.php 
-   57  cd ..
-   58  mkdir dulichthoi
-   59  cd \
-   60  sudo pecl install mongo
-   61  echo "extension=mongo.so" >> /etc/php5/cli/php.ini
-   62  echo "extension=mongo.so" >> /etc/php5/fpm/php.ini
+  
    63  service nginx status
    64  service php5-fpm status
    65  sudo apt-get install php5-curl
@@ -76,19 +31,12 @@
    76  sudo service php5-fpm restart
    77  sudo service nginx restart
    78  sudo service ajenti restart
-   79  mongodb
+   
    80  service mongod status
-   81  sudo service ajenti restart
-   82  sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
-   83  sudo service mongod restart
-   84  clear
+   
    85  service php5-fpm status
    86  apt-get install ajenti-v ajenti-v-nodejs
    87  service ajenti restart
-   88  cd /var/l
-   89  cd /var/log
-   90  ls
-   91  vim php5-fpm.log 
    92  wget http://www.configserver.com/free/csf.tgz
    93  tar -xzf csf.tgz
    94  ufw disable
@@ -141,68 +89,11 @@
   141  ls
   142  apt-get install php5-xcache
   143  service php5-fpm restart
-  144  chmod 755 /var/www/vhosts/domain.com/httpdocs/wp-content/
-  145  cd ..
-  146  cd
-  147  chmod 755 /var/www/vhosts/domain.com/httpdocs/wp-content/
-  148  cd /var/
-  149  ls
-  150  cd /srv/www/dulichthoi/
-  151  ls
-  152  chmod 755 wp-content/
-  153  nano nginx.conf 
   154  service nginx status
   155  apt-get install php5-gd
   156  apt-get install ajenti ajenti-v ajenti-v-nginx ajenti-v-mysql ajenti-v-php-fpm ajenti-v-mail ajenti-v-ftp-pureftpd php5-mysql php5-gd php5-mcrypt php5-mysql php5-cli php5-apc
   157  sudo apt-get install php5-memcached memcached
-  158  cd /var/run
-  159  ls
-  160  mkdir nginx-cache
-  161  chmod nginx-cache 777
-  162  chmod 777 nginx-cache
-  163  service memcached status
-  164  memcached 
-  165  nginx -t && service nginx reload
-  166  service nginx reload
-  167  cd /etc/nginx/
-  168  ls
-  169  cd /srv/www/
-  170  ls
-  171  mkdir tisport
-  172  ls
-  173  service 
-  174  service --status-all
-  175  service memcached stop
-  176  cd /srv/www/
-  177  cd /srv/www/
-  178  ;s
-  179  ls
-  180  cd dulichthoi/
-  181  cd wp-content/
-  182  cd plugins/wp-super-cache/
-  183  ls
-  184  cd]
-  185  cd
-  186  service list
-  187  service -l
-  188  service -h
-  189  service --status-all
-  190  service mongod stop 
-  191  service --status-all
-  192  cd /var/
-  193  ls
-  194  cd lo
-  195  cd log/
-  196  ls
-  197  vi mysql.err 
-  198  nano mysql.err 
-  199  cd supervisor/
-  200  ls
-  201  nano supervisord.log 
-  202  cd]
-  203  cd
-  204  clear
-  205  mkdir ~/.ssh
+  105  mkdir ~/.ssh
   206  touch ~/.ssh/authorized_keys
   207  cd ~/.ssh/
   208  ls
